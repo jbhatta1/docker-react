@@ -7,4 +7,4 @@ before_install:
   - docker build -t jbhatta1/docker_react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true jbhatta1/docker-react npm test
+  - docker run jbhatta1/docker_react npm run test -- --coverage
